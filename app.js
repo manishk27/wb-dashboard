@@ -56,7 +56,12 @@ function renderCharts() {
     datasets: [{
       label: 'Seats',
       data: scatterData,
-      backgroundColor: '#F97316'
+      backgroundColor: filtered.map(s => {
+  if (s.volatility === "HIGH") return "#F97316";   // orange
+  if (s.volatility === "MEDIUM") return "#2563EB"; // blue
+  return "#16A34A";                                // green
+})
+      
     }]
   }
 });
