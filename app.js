@@ -37,8 +37,13 @@ function renderKPIs() {
   const total = filtered.length;
   const high = filtered.filter(s=>s.volatility==="HIGH").length;
 
+  const avgMargin = Math.round(filtered.reduce((a,b)=>a+b.margin,0)/total);
+  const avgSIR = Math.round(filtered.reduce((a,b)=>a+b.sir,0)/total);
+
   document.getElementById("total").innerText = total;
   document.getElementById("high").innerText = high;
+  document.getElementById("margin").innerText = avgMargin;
+  document.getElementById("sir").innerText = avgSIR;
 }
 
 let scatterChart, pieChart;
