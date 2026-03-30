@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WB Election Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<h1>WB Election Volatility Dashboard</h1>
+
+<!-- KPI -->
+<div class="kpi-container">
+  <div class="card">Total: <span id="total"></span></div>
+  <div class="card orange">High Risk: <span id="high"></span></div>
+  <div class="card">Avg Margin: <span id="margin"></span></div>
+  <div class="card">Avg SIR: <span id="sir"></span></div>
+</div>
+
+<!-- FILTERS -->
+<div class="filters">
+  <select id="regionFilter">
+    <option value="All">All Regions</option>
+    <option>Industrial</option>
+    <option>Border</option>
+    <option>North Bengal</option>
+    <option>Junglemahal</option>
+    <option>Urban</option>
+  </select>
+</div>
+
+<!-- CHARTS -->
+<div class="charts">
+  <canvas id="scatterChart"></canvas>
+  <canvas id="pieChart"></canvas>
+</div>
+
+<!-- TABLE -->
+<table>
+<thead>
+<tr>
+<th>Seat</th><th>Region</th><th>Margin</th><th>SIR</th>
+<th>Ratio</th><th>Risk</th><th>Flip</th>
+</tr>
+</thead>
+<tbody id="tableBody"></tbody>
+</table>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

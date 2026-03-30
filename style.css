@@ -1,0 +1,49 @@
+body {
+  background:#0A0A0F;
+  color:white;
+  font-family:Arial;
+  padding:20px;
+}
+
+.kpi-container {
+  display:flex;
+  gap:10px;
+}
+
+.card {
+  background:#12121A;
+  padding:15px;
+  border-radius:10px;
+}
+
+.orange { color:#F97316; }
+
+.filters {
+  margin:20px 0;
+}
+
+.charts {
+  display:flex;
+  gap:20px;
+}
+
+canvas {
+  background:#12121A;
+  padding:10px;
+  border-radius:10px;
+}
+
+table {
+  width:100%;
+  margin-top:20px;
+  border-collapse:collapse;
+}
+
+td, th {
+  padding:10px;
+  border-bottom:1px solid #333;
+}
+
+.HIGH { color:#F97316; }
+.MEDIUM { color:#2563EB; }
+.LOW { color:#16A34A; }
