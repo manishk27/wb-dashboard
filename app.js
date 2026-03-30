@@ -50,6 +50,17 @@ let scatterChart, pieChart;
 
 function renderCharts() {
 
+  scatterChart = new Chart(document.getElementById("scatterChart"), {
+  type: 'scatter',
+  data: {
+    datasets: [{
+      label: 'Seats',
+      data: scatterData,
+      backgroundColor: '#F97316'
+    }]
+  }
+});
+
   const scatterData = filtered.map(s => ({
     x: s.margin,
     y: s.sir
