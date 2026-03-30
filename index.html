@@ -18,10 +18,10 @@
   <div class="card">Avg SIR: <span id="sir"></span></div>
 </div>
 
-<!-- FILTERS -->
+<!-- FILTER -->
 <div class="filters">
   <select id="regionFilter">
-    <option value="All">All Regions</option>
+    <option value="All" selected>All Regions</option>
     <option>Industrial</option>
     <option>Border</option>
     <option>North Bengal</option>
@@ -40,13 +40,19 @@
 <table>
 <thead>
 <tr>
-<th>Seat</th><th>Region</th><th>Margin</th><th>SIR</th>
-<th>Ratio</th><th>Risk</th><th>Flip</th>
+<th>Seat</th>
+<th>Region</th>
+<th>Margin</th>
+<th>SIR</th>
+<th>Ratio</th>
+<th>Risk</th>
+<th>Flip</th>
 </tr>
 </thead>
 <tbody id="tableBody"></tbody>
 </table>
 
+<!-- JS -->
 <script src="data.js"></script>
 <script src="app.js"></script>
 
