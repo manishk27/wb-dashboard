@@ -1,32 +1,21 @@
-
-
 const seats = [
-  {seat:"Kulti", region:"Industrial", winner:"TMC", margin:679, ls:"BJP", sir:38000},
-  {seat:"Asansol North", region:"Industrial", winner:"TMC", margin:8500, ls:"BJP", sir:22000},
-  {seat:"Raniganj", region:"Industrial", winner:"TMC", margin:12000, ls:"BJP", sir:25000},
-  {seat:"Durgapur East", region:"Industrial", winner:"TMC", margin:9500, ls:"BJP", sir:21000},
-  {seat:"Pandaveswar", region:"Industrial", winner:"TMC", margin:11000, ls:"BJP", sir:23000},
+  {seat:"Kulti", region:"Industrial", margin:679, ls:"BJP", sir:38000},
+  {seat:"Asansol North", region:"Industrial", margin:8500, ls:"BJP", sir:22000},
+  {seat:"Raniganj", region:"Industrial", margin:12000, ls:"BJP", sir:25000},
+  {seat:"Durgapur East", region:"Industrial", margin:9500, ls:"BJP", sir:21000},
+  {seat:"Pandaveswar", region:"Industrial", margin:11000, ls:"BJP", sir:23000},
 
-  {seat:"Bongaon South", region:"Border", winner:"TMC", margin:14000, ls:"BJP", sir:30000},
-  {seat:"Gaighata", region:"Border", winner:"TMC", margin:10500, ls:"BJP", sir:28000},
-  {seat:"Domkal", region:"Border", winner:"TMC", margin:16000, ls:"Close", sir:32000},
-  {seat:"Hariharpara", region:"Border", winner:"TMC", margin:18000, ls:"Close", sir:29000},
-  {seat:"Raghunathganj", region:"Border", winner:"TMC", margin:16500, ls:"Close", sir:27000},
+  {seat:"Bongaon South", region:"Border", margin:14000, ls:"BJP", sir:30000},
+  {seat:"Gaighata", region:"Border", margin:10500, ls:"BJP", sir:28000},
 
-  {seat:"Jalpaiguri", region:"North Bengal", winner:"TMC", margin:12000, ls:"BJP", sir:26000},
-  {seat:"Sitai", region:"North Bengal", winner:"TMC", margin:11000, ls:"BJP", sir:21000},
-  {seat:"Mekliganj", region:"North Bengal", winner:"TMC", margin:9000, ls:"BJP", sir:20000},
+  {seat:"Jalpaiguri", region:"North Bengal", margin:12000, ls:"BJP", sir:26000},
 
-  {seat:"Jhargram", region:"Junglemahal", winner:"TMC", margin:15000, ls:"Close", sir:18000},
-  {seat:"Binpur", region:"Junglemahal", winner:"TMC", margin:17000, ls:"Close", sir:20000},
-  {seat:"Bandwan", region:"Junglemahal", winner:"TMC", margin:10000, ls:"BJP", sir:15000},
+  {seat:"Jhargram", region:"Junglemahal", margin:15000, ls:"Close", sir:18000},
 
-  {seat:"Barasat", region:"Urban", winner:"TMC", margin:13500, ls:"Close", sir:12000},
-  {seat:"Madhyamgram", region:"Urban", winner:"TMC", margin:11000, ls:"Close", sir:10000},
-  {seat:"Rajarhat", region:"Urban", winner:"TMC", margin:15000, ls:"Close", sir:13000},
+  {seat:"Barasat", region:"Urban", margin:13500, ls:"Close", sir:12000},
 ];
 
-// COMPUTE METRICS
+// CALCULATIONS
 seats.forEach(s => {
   s.ratio = (s.sir / s.margin).toFixed(2);
 
