@@ -54,6 +54,18 @@ function renderCharts() {
   type: 'scatter',
   data: {
     datasets: [{
+      options: {
+  plugins: {
+    tooltip: {
+      callbacks: {
+        label: function(context) {
+          const s = filtered[context.dataIndex];
+          return s.seat + " | Margin: " + s.margin + " | SIR: " + s.sir;
+        }
+      }
+    }
+  }
+}
       label: 'Seats',
       data: scatterData,
       backgroundColor: filtered.map(s => {
